@@ -1,0 +1,227 @@
+/* about.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/premium-photo/wave-particles-futuristic-green-dots-background-with-dynamic-wave-big-data-3d-rendering_105800-1260.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 70px; /* Added padding to prevent content from being hidden behind the fixed header */
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    height: 40px;
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Pushes the list to the right */
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Added transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #00ff00; /* Changed color on hover */
+}
+
+section {
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 500%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
+}
+
+#subtitle {
+    font-size: 200%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
+}
+
+#solutions, #services {
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    padding: 2rem 0; /* Added padding */
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10%; /* Added padding on the sides */
+}
+
+.content-wrapper .image, .content-wrapper .text {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem; /* Added padding to prevent sticking */
+}
+
+.content-wrapper .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.content-wrapper .text {
+    font-size: 1.2rem; /* Increased text size */
+}
+
+#extra-space {
+    background-color: #000; 
+    height: 10px; 
+}
+
+#contact {
+    position: relative;
+    padding: 50px 0;
+    color: #fff;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
+}
+
+#customer-form {
+    background-color: #000; /* Changed to completely black background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    color: #fff; /* Changed text color to white */
+    height: auto; /* Adjusted height to be more compact */
+}
+
+#customer-form label {
+    background-color: #000; /* Black background */
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#customer-form input, 
+#customer-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Changed background color to white */
+    color: #000; /* Changed text color to black */
+}
+
+#customer-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+#customer-form button:hover {
+    background-color: #201e1e; /* Changed background color on hover */
+}
+
+#feedback {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Changed to a darker background */
+    color: #fff; /* Changed text color to white */
+}
+
+#feedback h2 {
+    text-align: center;
+    background-color: #000; /* Black background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
+}
+
+#feedback-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #000; /* Changed to completely black background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#feedback-form label,
+#feedback-form textarea,
+#feedback-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#feedback-form textarea {
+    height: 100px;
+    background-color: #fff; /* Changed background color to white */
+    color: #000; /* Changed text color to black */
+}
+
+#feedback-form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+#feedback-form button:hover {
+    background-color: #201e1e; /* Changed background color on hover */
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s; /* Added transition for hover effect */
+}
+
+footer a:hover {
+    color: #00ff00; /* Changed color on hover */
+}

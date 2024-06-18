@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    background-color: #000000; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    height: 40px;
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Pushes the list to the right */
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #2c942c; /* Changed color on hover */
+}
+
+section {
+    padding: 2rem;
+}
+
+section#home {
+    background: url('https://w0.peakpx.com/wallpaper/162/428/HD-wallpaper-vista-aurora-green-technology.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.home-content {
+    background: rgba(0, 0, 0, 0); /* Add a semi-transparent background for better text visibility */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.section-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section#home h1 {
+    font-size: 3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+section#home h1:hover {
+    transform: scale(1.1);
+    color: #2c942c;
+}
+
+section#about, section#products, section#contact, section#feedback {
+    background-color: #000000; /* Ensure these sections have a black background */
+    color: white;
+    margin-top: 1rem;
+    text-align: center; /* Center the headings */
+}
+
+section#about h2, section#products h2, section#contact h2 {
+    text-align: center; /* Ensure the headings are centered */
+    margin-bottom: 2rem;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: right; /* Stack content vertically */
+    align-items: center; /* Center align the content */
+}
+
+.content-wrapper .image {
+    margin-bottom: 0.5rem; /* Add some space between image and text */
+}
+
+.content-wrapper .image img {
+    max-width: 60%; /* Reduce the size of the images */
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s; /* Added transition for hover effect */
+}
+footer a:hover {
+    color: #2c942c; /* Changed color on hover */
+}
+.loginwrapper {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loginform-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.form-container {
+    margin: 0 auto;
+    width: 350px;
+    background-color: #000000; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.title {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 10px 0 30px 0;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.sub-title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+}
+
+.input {
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 12px 15px;
+}
+
+.form-btn {
+    padding: 10px 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: rgb(22, 22, 22);
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-btn:active {
+    box-shadow: none;
+}
+
+.sign-up-label {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    
+}
+
+.sign-up-link {
+    font-size: 14px;
+    margin-left: 1px;
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+    color: rgb(29, 156, 56);
+    cursor: pointer;
+    font-weight: 800;
+}
